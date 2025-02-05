@@ -24,7 +24,7 @@ const Navbar = () => {
         <nav className='w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50'>
 
             <a href='#top'>
-                <Image src={assets.logo} alt='name logo' className='w-28 cursor-pointer mr-14' />
+                <Image src={assets.logo_f} alt='name logo'  className='w-28 cursor-pointer mr-14' />
             </a>
 
             <ul className='hidden md:flex items-center gap-6 lg:gap-8

@@ -17,10 +17,7 @@ const Header = () => {
             Full Stack Developer based in Paris.
         </h1>
         <p className='max-w-2xl mx-auto font-Ovo'>
-            I am a full stack developer from France. I am passionate about web development and I love to create websites and web applications that are both beautiful and functional. 
-            I have experience working with a variety of technologies including HTML, CSS, JavaScript, React, Node.js, and MongoDB. 
-            I am always looking to learn new things and improve my skills as a developer. Actually I work as a freelance developer with an agency.
-            I am currently looking for new opportunities to work on exciting projects with a team of talented developers. 
+            I am a full stack developer from France. I am passionate about web development and I love to create websites and web applications that are both beautiful and functional.<br/>
             If you are interested in working with me, please feel free to get in touch!
         </p>
         <div className='flex flex-col sm:flex-row items-center gap-4 mt-4'>

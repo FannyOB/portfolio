@@ -21,11 +21,12 @@ const Work = () => {
                 justify-between duration-500 group-hover:bottom-7'>
 
                   <div>
-                    <h2>{project.title}</h2>
-                    <p>{project.description}</p>
+                    <h2 className='font-semibold'>{project.title}</h2>
+                    <p className='text-sm text-gray-700'>{project.description}</p>
                   </div>
                   
-                  <div>
+                  <div className='border rounded-full border-black w-9 aspect-square flex items-center justify-center
+                  shadow-[2px_2px_0px_#000] group-hover:bg-lime-300 transition'>
                     <Image src={assets.send_icon}  alt='send icon' className='w-5' />
                   </div>
                            

@@ -19,7 +19,7 @@ const Footer = () => {
             <p>© 2025 Fanny Olenga Binene. All rigths reserved.</p>
             <ul className='flex items-center gap-10 justify-center mt-4 sm:mt-0'>
                 <li><a target='_blank' href='https://github.com/FannyOB'>GitHub</a></li>
-                <li><a target='_blank' href='www.linkedin.com/in/fanny-olenga-binene-'>LinkedIn</a></li>
+                <li><a target='_blank' href='https://www.linkedin.com/in/fanny-olenga-binene-/'>LinkedIn</a></li>
             </ul>
         </div>
     </div>

@@ -1,7 +1,7 @@
 import { assets, infoList ,toolsData} from '@/assets/assets'
 import Image from 'next/image'
 import React from 'react'
-import { motion } from "motion/react"
+import { motion } from 'motion/react'
 
 const About = ({isDarkMode}) => {
   return (

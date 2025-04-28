@@ -28,34 +28,34 @@ const About = ({isDarkMode}) => {
         initial={{ opacity: 0 }} 
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
-        className='flex w-full flex-col lg:flex-row items-center gap-20 my-12'> {/** initialment: my-20 */}
-            <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.6 }}
-            className='w-64 sm:w-auto rounded-3xl max-w-none'>
-                <Image src={assets.user_image} alt='user' className='w-full rounded-3xl'/> {/** TO DO: changer la photo */}
-            </motion.div>
-
+        className='flex w-full flex-col items-center gap-16 my-12'>
+            {/* Section texte centrée */}
             <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.8 }}
-            className='flex-1'>
-                <p className='mb-10 max-w-2xl font-Ovo'>
-                I am an experienced full stack developer .I have experience working with a variety of technologies.<br/>
-                In my past i worked in pharmaceutical industry, my multiple skills allowed me to succeed in my professional retraining as a web developer.
-                Throughout my study, I have had the privilege of collaborating with prestigious organizations such as Axway.
-                Actually I work as a freelance developer with an agency who works with many clients in various industries.
-                For me it's a great opportunity, because I have the possibility to work on different projects and to learn new technologies.
-                I am always looking to learn new things and improve my skills as a developer.
+            className='max-w-3xl mx-auto'>
+                <p className='font-Ovo text-justify leading-relaxed'>
+                    I am an experienced full stack developer. I have experience working with a variety of technologies.
+                    In my past i worked in pharmaceutical industry, my multiple skills allowed me to succeed in my professional retraining as a web developer.
+                    Throughout my study, I have had the privilege of collaborating with prestigious organizations such as Axway.<br/>
+                    Actually I work as a freelance developer with an agency who works with many clients in various industries.
+                    For me it's a great opportunity, because I have the possibility to work on different projects and to learn new technologies.
+                    I am always looking to learn new things and improve my skills as a developer.
                 </p>
+            </motion.div>
 
+            {/* Section infos et outils */}
+            <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.6, delay: 1 }}
+            className='w-full'>
                 <motion.ul
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.8, delay: 1 }}
-                className='grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl'>
+                className='grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto mb-12'>
                     {infoList.map(({icon, iconDark, title, description},
                     index) => (
                         <motion.li
@@ -70,33 +70,34 @@ const About = ({isDarkMode}) => {
                     ))}
                 </motion.ul>
 
-                <motion.h4 
-                initial={{ y: 20, opacity: 0 }}
-                whileInView={{ y: 0, opacity: 1 }}
-                transition={{ delay: 1.3, duration: 0.5 }}
-                className='my-6 text-gray-700 font-Ovo dark:text-white/80'>
-                    Tools I use</motion.h4>
+                <div className='max-w-4xl mx-auto'>
+                    <motion.h4 
+                    initial={{ y: 20, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{ delay: 1.3, duration: 0.5 }}
+                    className='my-6 text-gray-700 font-Ovo dark:text-white/80 text-center'>
+                        Tools I use
+                    </motion.h4>
 
-                <motion.ul
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ duration: 1.5, delay: 0.6 }}
-                className='flex items-center gap-3 sm:gap-5'>
-                    {toolsData.map((tool, index) =>(
-                        <motion.li 
-                        whileHover={{ scale: 1.1 }}
-                        className='flex items-center justify-center w-12 sm:-14 
-                        aspect-square border border-gray-400 
-                        rounded-lg cursor-pointer hover:-translate-y-1 duration-500' 
-                        key={index}>
-                            <Image src={tool} alt='Tool' className='w-5 sm:w-7'/>
-                        </motion.li>
-                    ))}
-                </motion.ul>
+                    <motion.ul
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{ duration: 1.5, delay: 0.6 }}
+                    className='flex items-center justify-center gap-3 sm:gap-5 flex-wrap'>
+                        {toolsData.map((tool, index) =>(
+                            <motion.li 
+                            whileHover={{ scale: 1.1 }}
+                            className='flex items-center justify-center w-12 sm:-14 
+                            aspect-square border border-gray-400 
+                            rounded-lg cursor-pointer hover:-translate-y-1 duration-500' 
+                            key={index}>
+                                <Image src={tool} alt='Tool' className='w-5 sm:w-7'/>
+                            </motion.li>
+                        ))}
+                    </motion.ul>
+                </div>
             </motion.div>
-
         </motion.div>
-
     </motion.div>
   )
 }

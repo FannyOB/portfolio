@@ -1,5 +1,6 @@
 'use client';
 import { useState,useEffect } from "react";
+import { usePathname } from 'next/navigation';
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
@@ -10,6 +11,7 @@ import Work from "./components/Work";
 export default function Home() {
 
   const [isDarkMode, setIsDarkmode] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() =>{
     if(localStorage.theme === 'dark' || (!('theme' in localStorage) && 
@@ -29,6 +31,19 @@ export default function Home() {
       localStorage.theme = '';
     }
   }, [isDarkMode])
+
+  useEffect(() => {
+    // On vérifie qu'on est bien sur la home
+    if (pathname === '/' && window.location.hash) {
+      const id = window.location.hash.replace('#', '');
+      setTimeout(() => {
+        const el = document.getElementById(id);
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    }
+  }, [pathname]);
 
   return (
     <>

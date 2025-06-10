@@ -80,24 +80,53 @@ export const assets = {
 
 export const workData = [
     {
-        title: 'Frontend project',
-        description: 'Web Design',
+        id: "projet-1",
+        title: 'Local Shark ',
+        description: 'Plateforme de gestion',
         bgImage: '/work-1.png',
+        fullDescription: `Local Shark - Votre réputation locale, automatisée
+        Local Shark est une plateforme SaaS tout-en-un conçue pour aider les commerces à gérer leur présence en ligne et à booster leur réputation locale. Elle centralise les avis clients, automatise les réponses grâce à l’IA, et permet de programmer des publications et visuels sur les fiches Google Business.Fonctionnalités principales
+        Gestion multi-fiches Google My Agrégation des avis Google
+        Réponses automatiques aux avis générées par IA
+        Création et planification de posts et photos avec IA
+        Dashboard analytique : sentiment, évolution, performance
+        Rapports mensuels et alertes en temps réel
+        Utilisée par plus de 1200 commerces locaux, Local Shark a permis à ses utilisateurs d’augmenter leur note moyenne en ligne de 0.8 point, tout en gagnant un temps précieux dans la gestion de leur image de marque.`,
+        technologies: ["React", "Next.js", "Tailwind"],
+
     },
     {
-        title: 'Geo based app',
+        id: "projet-2",
+        title: 'Les 24H du Mans',
         description: 'Mobile App',
         bgImage: '/work-2.png',
+        fullDescription: "Application métier sécurité et gestion logistique",
+        technologies: ["React", "Next.js", "Tailwind"],
     },
     {
-        title: 'Photography site',
-        description: 'Web Design',
+        id: "projet-3",
+        title: 'Weather project',
+        description: 'Carte météo dynamique',
         bgImage: '/work-3.png',
+        fullDescription: "Description détaillée du projet à créer...",
+        technologies: ["WordPress","","Javascript", "HTML", "CSS","PHP"],
     },
     {
-        title: 'UI/UX designing',
-        description: 'UI/UX Design',
+        id: "projet-4",
+        title: 'Axway',
+        description: 'Refonte app',
         bgImage: '/work-4.png',
+        fullDescription: "Ré-Implémentation d'une application interne exclusivement utilisée par l'équipe Support Web, pour la génération de clés d'accès après obtention de produits Axway par les clients..",
+        technologies: ["React", "Next.js", "Tailwind"],
+        /**
+         * periode: "Janvier 2024 - Mars 2024",
+        client: "Nom du client",
+        screenshots: [
+            "/screenshot1.png",
+            "/screenshot2.png",
+            "/screenshot3.png"
+        ]
+         */
     },
 ]
 
@@ -111,7 +140,7 @@ export const serviceData = [
 export const infoList = [
     { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript React Js, Next Js' },
     { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech in Computer Science' },
-    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' }
+    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Fun Projects', description: 'Built more than 5 projects' }
 ];
 
 export const toolsData = [

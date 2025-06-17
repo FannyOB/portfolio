@@ -36,7 +36,7 @@ const About = ({isDarkMode}) => {
             transition={{ duration: 0.6, delay: 0.8 }}
             className='max-w-3xl mx-auto'>
                 <p className='font-Ovo text-justify leading-relaxed'>
-                    I am an experienced full stack developer. I have experience working with a variety of technologies.
+                    I am an experienced front-end developer. I have experience working with a variety of technologies.
                     In my past i worked in pharmaceutical industry, my multiple skills allowed me to succeed in my professional retraining as a web developer.
                     Throughout my study, I have had the privilege of collaborating with prestigious organizations such as Axway.<br/>
                     Actually I work as a freelance developer with an agency who works with many clients in various industries.

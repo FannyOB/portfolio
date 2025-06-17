@@ -29,7 +29,7 @@ const Header = () => {
         whileInView={{y: 0, opacity: 1}}
         transition={{duration: 0.8, delay: 0.5}}
         className='text-3xl sm:text-6xl lg:text-[66px] font-Ovo'>
-            Full Stack Developer based in Paris.
+            Front-end Developer based in Paris.
         </motion.h1>
 
         <motion.p 
@@ -37,7 +37,7 @@ const Header = () => {
         whileInView={{opacity: 1}}
         transition={{duration: 0.6, delay: 0.7}}
         className='max-w-2xl mx-auto font-Ovo'>
-            I am a full stack developer from France. I am passionate about web development and I love to create websites and web applications that are both beautiful and functional.<br/>
+            I am a front-end developer from France. I am passionate about web development and I love to create websites and web applications that are both beautiful and functional.<br/>
             If you are interested in working with me, please feel free to get in touch!
         </motion.p>
         
